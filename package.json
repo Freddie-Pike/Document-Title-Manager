@@ -1,0 +1,50 @@
+{
+  "name": "year-wrap-up",
+  "version": "1.0.0",
+  "description": "A year wrap website made in react",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ]
+  },
+  "author": "Freddie Pike",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "react-spring": "^8.0.27"
+  }
+}
